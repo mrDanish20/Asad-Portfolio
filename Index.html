@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asad-Portfolio</title>
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<script>
+    (function () {
+        const savedTheme = localStorage.getItem('selected-theme') || 'Light';
+        const savedColor = localStorage.getItem('selected-color');
+
+        // Immediately apply saved theme & color to prevent flash
+        document.documentElement.className = savedTheme;
+        if (savedColor) {
+            document.documentElement.style.setProperty('--hue', savedColor);
+        }
+    })();
+</script>
+
+
+
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav-logo">Asad<span class="dot">.</span></a>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#works" class="nav-link">Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#resume" class="nav-link">Resume</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a href="#testimonials" class="nav-link">Testimonials</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+
+
+                </ul>
+
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/asad-iftikhar-aa4055136/" target="_blank"
+                        class="social-link linkedin">
+                        <i class="ri-linkedin-fill"></i>
+                    </a>
+                    <a href="https://www.facebook.com/share/1BtX6tqBpn/" target="_blank" class="social-link facebook">
+                        <i class="ri-facebook-fill"></i>
+                    </a>
+                    <a href="https://www.instagram.com/asadiftikhar1995/" target="_blank" class="social-link instagram">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="https://www.behance.net/asadkhan321" target="_blank" class="social-link behance">
+                        <i class="ri-behance-fill"></i>
+                    </a>
+                </div>
+
+
+                <div class="section-deco deco-left header-deco">
+                    <img src="assets/img/shape-1.png" alt="" class="shape">
+                </div>
+            </div>
+
+            <div class="nav-buttons">
+                <div class="nav-settings" id="switcher-toggle">
+                    <i class="ri-settings-3-line"></i>
+                </div>
+
+                <div class="nav-toggle" id="nav-toggle">
+
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <!-- Header -->
+
+
+    <!-- Main -->
+    <main class="main">
+
+        <!-- Home Section -->
+
+        <section class="home section" id="home">
+            <div class="home-container container">
+                <div class="home-content">
+                    <h2 class="home-subtitle">
+                        Hello, <span>My Name is</span>
+                    </h2>
+                    <h1 class="home-title">
+                        <span>Asad</span> Iftikhar
+                    </h1>
+                    <h3 class="home-job">
+                        <span class="static-text">I'm a</span> <span id="changing-text"></span>
+                    </h3>
+
+
+                    <div class="home-banner">
+                        <div class="home-img-wrapper">
+                            <img src="assets/img/39.jpg" alt="" class="home-profile">
+                        </div>
+
+                        <div class="home-data home-data-one">
+                            <span class="home-data-no" data-target="7">7 +</span>
+                            <h3 class="home-data-title">Years of <span>Experience</span></h3>
+                        </div>
+
+                        <div class="home-data home-data-two">
+                            <span class="home-data-no" data-target="13">13</span>
+                            <h3 class="home-data-title">Completed <span>Projects</span></h3>
+                        </div>
+
+                        <img src="assets/img/shape-1.png" alt="" class="shape shape-1">
+                        <img src="assets/img/shape-2.png" alt="" class="shape shape-2">
+                        <img src="assets/img/shape-3.png" alt="" class="shape shape-3">
+                    </div>
+                    <p class="home-description">
+                        I am from Karachi, Pakistan. I have rich experience in <span class="hightlight">3D
+                            Modeling</span>
+                        and <span class="hightlight">Visualization</span>, specializing in both
+                        <span class="hightlight">Interior</span> and <span class="hightlight">Exterior</span> designs
+                        and <span class="hightlight">3D Animator.</span>
+                        I love discussing what makes us unique.
+                    </p>
+
+
+
+                    <div class="home-socials social-links">
+                        <a href="https://www.linkedin.com/in/asad-iftikhar-aa4055136/" target="_blank"
+                            class="social-link linkedin">
+                            <i class="ri-linkedin-fill"></i>
+                        </a>
+                        <a href="https://www.facebook.com/share/1BtX6tqBpn/" target="_blank"
+                            class="social-link facebook">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/asadiftikhar1995/" target="_blank"
+                            class="social-link instagram">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="https://www.behance.net/asadkhan321" target="_blank" class="social-link behance">
+                            <i class="ri-behance-fill"></i>
+                        </a>
+                    </div>
+
+
+                    <div class="home-btns">
+                        <a download="" href="assets/pdf/Asad-CV -3D Visulization.pdf" class="btn">
+                            Download CV
+                        </a>
+
+                        <a href="#" class="home-link">My Skills</a>
+                    </div>
+                </div>
+
+                <div class="section-deco deco-left">
+                    <img src="assets/img/shape-1.png" alt="" class="shape">
+                </div>
+            </div>
+        </section>
+
+        <!-- Home Section -->
+
+
+        <!-- Services Section -->
+
+        <section class="services section" id="services">
+            <h2 class="section-title" data-title="My Services">What I Do</h2>
+
+            <div class="container">
+                <div class="swiper services-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide card">
+                            <h4 class="services-subtitle">3D Modeling</h4>
+                            <h3 class="services-title">High-Quality 3D Models</h3>
+                            <p class="services-description">
+                                Creating realistic and optimized 3D models for architecture, products, and environments
+                                with attention to detail and accuracy.
+                            </p>
+
+                            <a href="" class="link 
+                            ">See Pricing <i class="ri-arrow-right-line link-icon"></i></a>
+                        </div>
+
+
+                        <div class="swiper-slide card">
+                            <h4 class="services-subtitle">3D Visualization</h4>
+                            <h3 class="services-title">Photorealistic Rendering</h3>
+                            <p class="services-description">
+                                Producing stunning 3D renders and walkthroughs that bring your designs to life with
+                                perfect lighting, textures, and perspectives.
+                            </p>
+
+                            <a href="" class="link 
+                            ">See Pricing <i class="ri-arrow-right-line link-icon"></i></a>
+                        </div>
+
+
+                        <div class="swiper-slide card">
+                            <h4 class="services-subtitle">Interior</h4>
+
+
+                            <h3 class="services-title">Architectural Design</h3>
+
+                            <p class="services-description">
+                                Transforming indoor spaces into elegant, functional, and aesthetically pleasing
+                                environments.
+                                We focus on modern concepts, space optimization, and personalized 3D interior
+                                visualization.
+                            </p>
+
+                            <a href="" class="link 
+                            ">See Pricing <i class="ri-arrow-right-line link-icon"></i></a>
+                        </div>
+
+                        <div class="swiper-slide card">
+                            <h4 class="services-subtitle">Exterior</h4>
+
+
+                            <h3 class="services-title">Architectural Design</h3>
+                            <p class="services-description">
+                                Designing captivating building exteriors with stunning 3D visuals and creative
+                                architectural concepts.
+                                We enhance curb appeal and create realistic renderings for modern, classic, or luxury
+                                styles.
+                            </p>
+
+                            <a href="" class="link 
+                            ">See Pricing <i class="ri-arrow-right-line link-icon"></i></a>
+                        </div>
+
+                        <div class="swiper-slide card">
+                            <h4 class="services-subtitle">3D Animator</h4>
+
+                            <h3 class="services-title">Animation & Visualization</h3>
+
+                            <p class="services-description">
+                                Creating stunning 3D animations and visualizations for interiors, exteriors, and
+                                architectural projects.
+                                Bringing designs to life with realistic motion and immersive details.
+                            </p>
+
+                            <a href="" class="link">See Pricing <i class="ri-arrow-right-line link-icon"></i></a>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="section-deco deco-right">
+                    <img src="assets/img/shape-1.png" alt="" class="shape">
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Services Section -->
+
+
+        <!-- Skills Section -->
+
+        <section class="Skills section" id="skills">
+            <h2 class="section-title" data-title="My Talent">Professional Skills</h2>
+
+            <div class="Skills-container container grid">
+                <div class="skills-item">
+                    <div class="skills-header">
+                        <h3 class="skills-name">3D Modeling</h3>
+                        <!-- <span class="skills-value">80 <b>%</b></span> -->
+                    </div>
+
+                    <p class="skills-description">
+                        Creating realistic and optimized 3D models for architecture, products, and environments
+                        with attention to detail and accuracy.
+                    </p>
+
+                    <div class="skills-bar">
+                        <span class="skills-percentage" style="width: 100%;"></span>
+                    </div>
+                </div>
+
+                <div class="skills-item">
+                    <div class="skills-header">
+                        <h3 class="skills-name">3D Visualization</h3>
+                        <!-- <span class="skills-value">90 <b>%</b></span> -->
+                    </div>
+
+                    <p class="skills-description">
+                        Producing stunning 3D renders and walkthroughs that bring your designs to life with
+                        perfect lighting, textures, and perspectives.
+                    </p>
+
+                    <div class="skills-bar">
+                        <span class="skills-percentage" style="width: 100%;"></span>
+                    </div>
+                </div>
+
+                <div class="skills-item">
+                    <div class="skills-header">
+                        <h3 class="skills-name">Interior</h3>
+                        <!-- <span class="skills-value">90 <b>%</b></span> -->
+                    </div>
+
+                    <p class="skills-description" style="font-size: 14px;">
+                        Transforming indoor spaces into elegant, functional, and aesthetically pleasing environments.
+                        We focus on modern concepts, space optimization, and personalized 3D interior visualization.
+                    </p>
+
+
+                    <div class="skills-bar">
+                        <span class="skills-percentage" style="width: 100%;"></span>
+                    </div>
+                </div>
+
+                <div class="skills-item">
+                    <div class="skills-header">
+                        <h3 class="skills-name">Exterior</h3>
+                        <!-- <span class="skills-value">75 <b>%</b></span> -->
+                    </div>
+                    <p class="skills-description">
+                        Designing captivating building exteriors with stunning 3D visuals and creative architectural
+                        concepts. We enhance curb appeal and create realistic renderings for modern, classic, or luxury
+                        styles.
+                    </p>
+
+
+                    <div class="skills-bar">
+                        <span class="skills-percentage" style="width: 100%;"></span>
+                    </div>
+                </div>
+
+
+                <div class="skills-item">
+                    <div class="skills-header">
+                        <h3 class="skills-name">3D Animator</h3>
+                        <!-- <span class="skills-value">85 <b>%</b></span> -->
+                    </div>
+                    <p class="skills-description">
+                        Creating captivating 3D animations and visualizations that bring interiors, exteriors, and
+                        architectural designs to life. We deliver realistic motion, immersive details, and engaging
+                        presentations for modern, classic,
+                        or luxury projects.
+                    </p>
+
+                    <div class="skills-bar">
+                        <span class="skills-percentage" style="width: 100%;"></span>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <!-- <div class="skills-item">
+                    <div class="skills-header">
+                        <h3 class="skills-name">React</h3>
+                        <span class="skills-value">70 <b>%</b></span>
+                    </div>
+
+                    <p class="skills-description">
+                        Capable of developing fast, scalable, and responsive web applications using the React ecosystem.
+                    </p>
+
+                    <div class="skills-bar">
+                        <span class="skills-percentage" style="width: 70%;"></span>
+                    </div>
+                </div> -->
+
+                <!-- <div class="skills-item">
+                    <div class="skills-header">
+                        <h3 class="skills-name">Adobe XD</h3>
+                        <span class="skills-value">80 <b>%</b></span>
+                    </div>
+
+                    <p class="skills-description">
+                        Expertise in designing intuitive and visually appealing UI/UX prototypes using Adobe XD tools.
+                    </p>
+
+                    <div class="skills-bar">
+                        <span class="skills-percentage" style="width: 80%;"></span>
+                    </div>
+                </div> -->
+
+                <div class="section-deco deco-left">
+                    <img src="assets/img/shape-1.png" alt="" class="shape">
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+
+
+        <!-- Work Section -->
+
+        <section class="work section" id="works">
+            <h2 class="section-title" data-title="My Cases">Portfolio</h2>
+
+            <div class="container">
+                <ul class="work-list">
+                    <li class="work-item active-work" data-filter="all">All</li>
+                    <li class="work-item" data-filter=".Interior">Interior</li>
+                    <li class="work-item" data-filter=".Exterior">Exterior </li>
+                    <li class="work-item" data-filter=".MasterPlan">Masterplan</li>
+                </ul>
+
+                <div class="work-container grid">
+                    <div class="mix MasterPlan">
+                        <div class="card">
+                            <img src="./assets/img/Masterplan/Bird Eye.jpg" alt="Bird Eye View" class="work-img" />
+                            <h4 class="work-category">MasterPlan</h4>
+                            <h3 class="work-title">3D Modeling / Visualization and Vray renders</h3>
+                            <p class="work-description">
+                                Creating high-quality 3D models and photorealistic visualizations using advanced V-Ray
+                                rendering techniques, delivering stunning and detailed architectural presentations.
+                            </p>
+                            <button class="link show-more"
+                                data-gallery="assets/img/Masterplan/Bird Eye Close Up.jpg,assets/img/Masterplan/Bird Eye.jpg,assets/img/Masterplan/Park Bird Eye.jpg,assets/img/Masterplan/PARK VIEW.jpg,assets/img/Masterplan/1 Kanal Villa.jpg,assets/img/Masterplan/04.jpg,assets/img/Masterplan/Villa 1.jpg,assets/img/Masterplan/Villa 2.jpg,assets/img/Masterplan/Villa 3.jpg,assets/img/Masterplan/Villa 04.jpg,assets/img/Masterplan/Villa 5.jpg">
+                                Show More <i class="ri-arrow-right-line link-icon"></i>
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="mix Interior ">
+                        <div class="card">
+                            <img src="assets/img/Interior Designer/12.jpg" alt="" class="work-img" />
+                            <h4 class="work-category">Interior </h4>
+                            <h3 class="work-title">Interior Designer</h3>
+                            <p class="work-description">
+                                Designing stunning interior spaces with creative layouts and realistic 3D visuals for
+                                modern, classic, or luxury styles.
+                            </p>
+                            <button class="link show-more"
+                                data-gallery="assets/img/Interior Designer/1.jpg,assets/img/Interior Designer/2.jpg,assets/img/Interior Designer/3.jpg,assets/img/Interior Designer/3.jpg,
+                                assets/img/Interior Designer/5.jpg,assets/img/Interior Designer/6.jpg,assets/img/Interior Designer/7.jpg,assets/img/Interior Designer/8.jpg,assets/img/Interior Designer/9.jpg,
+                                assets/img/Interior Designer/10.jpg,assets/img/Interior Designer/11.jpg,assets/img/Interior Designer/12.jpg,assets/img/Interior Designer/13.jpg,assets/img/Interior Designer/14.jpg,
+                                assets/img/Interior Designer/15.jpg,assets/img/Interior Designer/16.jpg,assets/img/Interior Designer/17.jpg,assets/img/Interior Designer/18.jpg,assets/img/Interior Designer/20.jpg,
+                                assets/img/Interior Designer/21.jpg,assets/img/Interior Designer/22.jpg,assets/img/Interior Designer/23.jpg,assets/img/Interior Designer/24.jpg,
+                                assets/img/Interior Designer/25.jpg,assets/img/Interior Designer/26.jpg,assets/img/Interior Designer/27.jpg,assets/img/Interior Designer/28.jpg,">
+                                Show More <i class="ri-arrow-right-line link-icon"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="mix Exterior">
+                        <div class="card">
+                            <img src="assets/img/Exterior Designer/6.jpg" alt="" class="work-img" />
+                            <h4 class="work-category">Exterior</h4>
+                            <h3 class="work-title">Exterior Designer</h3>
+                            <p class="work-description">
+                                Designing stunning building exteriors with creative layouts and realistic 3D visuals for
+                                modern, classic, or luxury styles.
+                            </p>
+                            <button class="link show-more"
+                                data-gallery="assets/img/Exterior Designer/1.jpg,assets/img/Exterior Designer/2.jpg,assets/img/Exterior Designer/3.jpg,assets/img/Exterior Designer/3.jpg,
+    assets/img/Exterior Designer/5.jpg,assets/img/Exterior Designer/6.jpg,assets/img/Exterior Designer/7.jpg,assets/img/Exterior Designer/8.jpg,assets/img/Exterior Designer/9.jpg,
+    assets/img/Exterior Designer/11.jpg,assets/img/Exterior Designer/12.jpg,assets/img/Exterior Designer/13.jpg,assets/img/Exterior Designer/14.jpg,assets/img/Exterior Designer/15.jpg,">
+                                Show More <i class="ri-arrow-right-line link-icon"></i>
+                            </button>
+
+                        </div>
+                    </div>
+
+                    <!-- <div class="mix photography">
+                        <div class="card">
+                            <img src="assets/img/project4.jpeg" alt="" class="work-img" />
+                            <h4 class="work-category">Photography</h4>
+                            <h3 class="work-title">Gooir</h3>
+                            <p class="work-description">
+                                A professional photoshoot project focusing on natural light and modern aesthetics for
+                                Gooir Studios.
+                            </p>
+                            <button class="link show-more" data-img="assets/img/project4.jpeg">
+                                Show More <i class="ri-arrow-right-line link-icon"></i>
+                            </button>
+                        </div>
+                    </div> -->
+
+                    <!-- <div class="mix development">
+                        <div class="card">
+                            <img src="assets/img/project5.jpg" alt="" class="work-img" />
+                            <h4 class="work-category">Development</h4>
+                            <h3 class="work-title">Stay Fit</h3>
+                            <p class="work-description">
+                                A fitness app designed to track workouts, monitor progress, and help users achieve
+                                health goals.
+                            </p>
+                            <button class="link show-more" data-img="assets/img/project5.jpg">
+                                Show More <i class="ri-arrow-right-line link-icon"></i>
+                            </button>
+                        </div>
+                    </div> -->
+
+                    <!-- <div class="mix branding">
+                        <div class="card">
+                            <img src="assets/img/project6.jpg" alt="" class="work-img" />
+                            <h4 class="work-category">Branding</h4>
+                            <h3 class="work-title">Khana</h3>
+                            <p class="work-description">
+                                A creative branding solution for Khana, enhancing its visual identity and boosting
+                                customer engagement.
+                            </p>
+                            <button class="link show-more" data-img="assets/img/project6.jpg">
+                                Show More <i class="ri-arrow-right-line link-icon"></i>
+                            </button>
+                        </div>
+                    </div> -->
+                </div>
+
+                <div class="section-deco deco-right">
+                    <img src="assets/img/shape-1.png" alt="" class="shape">
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Modal -->
+        <div id="imageModal" class="modal">
+            <span class="close">&times;</span>
+            <div class="modal-content-wrapper">
+                <div class="slider">
+                    <div class="slides" id="modalSlides"></div>
+                    <button id="prevBtn" class="nav-btn prev">&#10094;</button>
+                    <button id="nextBtn" class="nav-btn next">&#10095;</button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Work Section -->
+
+
+        <!-- Reume Section -->
+
+        <section class="resume section" id="resume">
+            <h2 class="section-title" data-title="My Story">Resume</h2>
+
+            <div class="resume-container container grid">
+
+                <div class="resume-group">
+                    <h3 class="resume-title">Education</h3>
+
+                    <div class="resume-items">
+                        <div class="resume-item">
+                            <div class="resume-header">
+                                <h3 class="resume-header-title">Matric & Diploma</h3>
+                                <span class="resume-icon">
+                                    <i class="ri-add-line"></i>
+                                </span>
+                            </div>
+                            <div class="resume-content">
+                                <div class="resume-content-header">
+                                    <h3 class="reume-content-title">COMPUTER SCIENCE & CIVIL ENGINEERING.</h3>
+                                    <!-- <span class="resume-date">2014 - 2016</span> -->
+                                </div>
+                                <p class="resume-description">I have completed my Matriculation in Computer Science from
+                                    the Board of Secondary Education, Karachi, and a Diploma in Civil Engineering (First
+                                    Division) from the Sindh Board of Technical Education, Karachi.</p>
+                            </div>
+                        </div>
+
+                        <div class="resume-item">
+                            <div class="resume-header">
+                                <h3 class="resume-header-title">AutoCad & Architectural Visualization</h3>
+                                <span class="resume-icon">
+                                    <i class="ri-add-line"></i>
+                                </span>
+                            </div>
+                            <div class="resume-content">
+                                <div class="resume-content-header">
+                                    <h3 class="reume-content-title">AUTOCAD 2D/3D & ARCHVIZ</h3>
+                                    <!-- <span class="resume-date">2012 - 2014</span> -->
+                                </div>
+                                <p class="resume-description">I have received professional training in AutoCAD 2D/3D
+                                    from the Skill Development Council, Karachi, and Architectural Visualization from AS
+                                    Computer Institute.</p>
+                            </div>
+                        </div>
+
+                        <div class="resume-item">
+                            <div class="resume-header">
+                                <h3 class="resume-header-title">Adobe Photoshop & Advance Exel </h3>
+                                <span class="resume-icon">
+                                    <i class="ri-add-line"></i>
+                                </span>
+                            </div>
+                            <div class="resume-content">
+                                <div class="resume-content-header">
+                                    <h3 class="reume-content-title">ADOBE PS & ADV.EXCEL</h3>
+                                    <!-- <span class="resume-date">2010 - 2012</span> -->
+                                </div>
+                                <p class="resume-description">I have completed Adobe Photoshop and Advanced Excel from
+                                    Pak College of Computer & Business Education, along with the Computer Literacy
+                                    Program (CLP) from CadCom Education Systems, Nazimabad, Karachi.</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+                <div class="resume-group">
+                    <h3 class="resume-title">Experience</h3>
+
+                    <div class="resume-item">
+                        <div class="resume-header">
+                            <h3 class="resume-header-title">MS Engineering & Construction Company</h3>
+                            <span class="resume-icon">
+                                <i class="ri-add-line"></i>
+                            </span>
+                        </div>
+                        <div class="resume-content">
+                            <div class="resume-content-header">
+                                <h3 class="reume-content-title">MS ECC.</h3>
+                                <span class="resume-date">12 - Feb - 2017 - 25 - March - 2017</span>
+                            </div>
+                            <p class="resume-description">Completed a Six-Week Internship Program at MS Engineering &
+                                Construction Company.</p>
+                        </div>
+                    </div>
+
+                    <div class="resume-item">
+                        <div class="resume-header">
+                            <h3 class="resume-header-title">Al-Rehman Engineering Works & Services</h3>
+                            <span class="resume-icon">
+                                <i class="ri-add-line"></i>
+                            </span>
+                        </div>
+                        <div class="resume-content">
+                            <div class="resume-content-header">
+                                <h3 class="reume-content-title">AREWS.</h3>
+                                <span class="resume-date">1 - Aug - 2019 - 22 - Feb - 2020</span>
+                            </div>
+                            <p class="resume-description">Completed seven months of work experience as a Draftsman at
+                                Al-Rehman Engineering Works & Services.</p>
+                        </div>
+                    </div>
+
+                    <div class="resume-item">
+                        <div class="resume-header">
+                            <h3 class="resume-header-title">Pixarch Company</h3>
+                            <span class="resume-icon">
+                                <i class="ri-add-line"></i>
+                            </span>
+                        </div>
+                        <div class="resume-content">
+                            <div class="resume-content-header">
+                                <h3 class="reume-content-title">PIXRACH.</h3>
+                                <span class="resume-date">24 - Feb - 2020 - Present</span>
+                            </div>
+                            <p class="resume-description">3D Visualization Artist & Animator with 5 years at Pixarch
+                                Company, specializing in interior and exterior design visualization. Skilled in
+                                photorealistic rendering, conceptual modeling, and animation using 3ds Max and Adobe
+                                Creative Suite, delivering high-quality visuals in collaboration with design teams.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-deco deco-left">
+                    <img src="assets/img/shape-1.png" alt="" class="shape">
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Reume Section -->
+
+        <!-- Testimonials Section -->
+
+        <!-- <section class="testimonials section" id="testimonials">
+            <h2 class="section-title" data-title="My Customers Say">Testimonials</h2>
+
+
+            <div class="container">
+                <div class="swiper testimonials-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide card">
+                            <div class="testimonial-icon">
+                                <i class="ri-double-quotes-r"></i>
+                            </div>
+
+                            <img src="assets/img/testimonial1.jpg" alt="" class="testimonials-img">
+
+                            <p class="testimonials-description">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                elit.
+                                Beatae accusantium dolore saepe?</p>
+
+                            <h3 class="testimonials-name">Barbara Wilson</h3>
+                            <span class="testimonials-author">CEO Company</span>
+                        </div>
+
+                        <div class="swiper-slide card">
+                            <div class="testimonial-icon">
+                                <i class="ri-double-quotes-r"></i>
+                            </div>
+
+
+
+                            <img src="assets/img/testimonial2.jpg" alt="" class="testimonials-img">
+
+                            <p class="testimonials-description">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                elit.
+                                Beatae accusantium dolore saepe?</p>
+
+                            <h3 class="testimonials-name">Charlie Smith</h3>
+                            <span class="testimonials-author">Designer</span>
+                        </div>
+
+                        <div class="swiper-slide card">
+                            <div class="testimonial-icon">
+                                <i class="ri-double-quotes-r"></i>
+                            </div>
+
+
+
+                            <img src="assets/img/testimonial3.jpg" alt="" class="testimonials-img">
+
+                            <p class="testimonials-description">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                elit.
+                                Beatae accusantium dolore saepe?</p>
+
+                            <h3 class="testimonials-name">Roy Wang</h3>
+                            <span class="testimonials-author">Manager GYM</span>
+                        </div>
+
+                        <div class="swiper-slide card">
+                            <div class="testimonial-icon">
+                                <i class="ri-double-quotes-r"></i>
+                            </div>
+
+
+
+                            <img src="assets/img/testimonial4.jpg" alt="" class="testimonials-img">
+
+                            <p class="testimonials-description">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                elit.
+                                Beatae accusantium dolore saepe?</p>
+
+                            <h3 class="testimonials-name">Jennifer Smith</h3>
+                            <span class="testimonials-author">CEO & Founder</span>
+                        </div>
+
+                        <div class="swiper-slide card">
+                            <div class="testimonial-icon">
+                                <i class="ri-double-quotes-r"></i>
+                            </div>
+
+
+
+                            <img src="assets/img/testimonial5.jpg" alt="" class="testimonials-img">
+
+                            <p class="testimonials-description">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                elit.
+                                Beatae accusantium dolore saepe?</p>
+
+                            <h3 class="testimonials-name">Paul Freeman</h3>
+                            <span class="testimonials-author">Photographer</span>
+                        </div>
+
+
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="section-deco deco-right">
+                    <img src="assets/img/shape-1.png" alt="" class="shape">
+                </div>
+            </div>
+        </section> -->
+
+        <!-- Testimonials Section -->
+
+
+        <!-- Contact Section -->
+
+        <section class="Contact section" id="contact">
+            <h2 class="section-title" data-title="Lets Talk About Ideas">Contact Me</h2>
+
+            <div class="contact-container container grid">
+                <div class="contact-content">
+
+                    <div class="contact-card">
+                        <span class="contact-icon">
+                            <i class="ri-map-2-line"></i>
+                        </span>
+                        <div>
+                            <h3 class="contact-title">Address</h3>
+                            <p class="contact-data">Pakistan , Karachi , North-nazimabad</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <span class="contact-icon">
+                            <i class="ri-user-3-line"></i>
+                        </span>
+                        <div>
+                            <h3 class="contact-title">Freelance</h3>
+                            <p class="contact-data">Available Right Now</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <span class="contact-icon">
+                            <i class="ri-mail-line"></i>
+                        </span>
+                        <div>
+                            <h3 class="contact-title">Email</h3>
+                            <p class="contact-data">asadiftikhar1995@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <span class="contact-icon">
+                            <i class="ri-contacts-book-2-line"></i>
+                        </span>
+                        <div>
+                            <h3 class="contact-title">Phone</h3>
+                            <p class="contact-data">+92 325 - 2358 - 908</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <form action="" class="contact-form grid" id="contact-form">
+                    <div class="contact-form-group grid">
+
+                        <div class="contact-form-div">
+                            <label for="contact-name" class="contact-form-label">
+                                Your Full Name <b>*</b></label>
+                            <input type="text" name="name" class="contact-form-input" id="contact-name">
+                        </div>
+
+                        <div class="contact-form-div">
+                            <label for="contact-email" class="contact-form-label">
+                                Your Email Address <b>*</b></label>
+                            <input type="email" name="email" class="contact-form-input" id="contact-email">
+                        </div>
+
+                        <div class="contact-form-div full-width">
+                            <label for="contact-subject" class="contact-form-label">
+                                Your Subject <b>*</b></label>
+                            <input type="text" name="subject" class="contact-form-input" id="contact-subject">
+                        </div>
+
+                        <div class="contact-form-div full-width">
+                            <label for="contact-message" class="contact-form-label">
+                                Your Message <b>*</b></label>
+                            <textarea name="message" class="contact-form-input contact-form-area"
+                                id="contact-message"></textarea>
+                        </div>
+
+                        <!-- ✅ Button aligned perfectly -->
+                        <div class="contact-submit full-width">
+                            <span>* Accept the terms and Conditions.</span>
+                            <button type="submit" class="btn">Send Message</button>
+                        </div>
+
+                        <p class="message" id="message"></p>
+                    </div>
+                </form>
+
+                <div class="section-deco deco-left">
+                    <img src="assets/img/shape-1.png" alt="" class="shape">
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+
+
+        <!-- Footer Section -->
+
+        <footer class="footer">
+
+            <div class="footer-container container">
+                <div class="footer-socials social-links">
+                    <a href="https://www.linkedin.com/in/asad-iftikhar-aa4055136/" target="_blank"
+                        class="social-link linkedin">
+                        <i class="ri-linkedin-fill"></i>
+                    </a>
+                    <a href="https://www.facebook.com/share/1BtX6tqBpn/" target="_blank" class="social-link facebook">
+                        <i class="ri-facebook-fill"></i>
+                    </a>
+                    <a href="https://www.instagram.com/asadiftikhar1995/" target="_blank" class="social-link instagram">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="https://www.behance.net/asadkhan321" target="_blank" class="social-link behance">
+                        <i class="ri-behance-fill"></i>
+                    </a>
+                </div>
+
+
+                <p class="footer-copyright">© 2026 <span>Asad</span> All Rights Reserved.</p>
+
+                <p class="footer-copyright">Developed by <span>Danish</span></p>
+
+            </div>
+        </footer>
+
+        <!-- Footer Section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+    <!-- Main -->
+
+
+
+
+    <!-- style-switcher -->
+
+    <div class="style-switcher" id="style-switcher">
+        <h2 class="style-switcher-title">Style Switcher</h2>
+
+        <div class="style-switcher-item">
+            <h3 class="style-switcher-subtitle">Colors</h3>
+
+
+            <div class="style-switcher-colors">
+                <span class="style-switcher-color active-color" style="--hue: 165">
+                    <i class="ri-check-line"></i>
+                </span>
+
+                <span class="style-switcher-color" style="--hue: 260">
+                    <i class="ri-check-line"></i>
+                </span>
+
+                <span class="style-switcher-color" style="--hue: 345">
+                    <i class="ri-check-line"></i>
+                </span>
+
+                <span class="style-switcher-color" style="--hue: 65">
+                    <i class="ri-check-line"></i>
+                </span>
+
+                <span class="style-switcher-color" style="--hue: 15">
+                    <i class="ri-check-line"></i>
+                </span>
+            </div>
+        </div>
+
+
+        <div class="style-switcher-item">
+            <h3 class="style-switcher-subtitle">Theme</h3>
+
+
+
+            <div class="style-switcher-themes">
+                <div class="style-switcher-theme">
+                    <input type="radio" class="style-switcher-input" name="body-theme" value="light" checked="true"
+                        id="light-theme" />
+
+                    <label for="light-theme" class="style-switcher-label">Light</label>
+                </div>
+                <div class="style-switcher-theme">
+                    <input type="radio" class="style-switcher-input" name="body-theme" value="dark" id="dark-theme" />
+
+                    <label for="dark-theme" class="style-switcher-label">Dark</label>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+        <div class="style-switcher-close" id="switcher-close">
+            <i class="ri-close-line"></i>
+        </div>
+    </div>
+
+    <!-- style-switcher -->
+
+
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="mixitup.min.js"></script>
+    <script src="Script.js"></script>
+</body>
+
+</html>

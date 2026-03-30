@@ -1882,4 +1882,41 @@ textarea {
     }
 }
 
+/*  New Media For modelimg responsive */
 
+@media screen and (max-width: 768px) {
+    
+    .slides img {
+        height: auto !important;
+        max-height: 70vh;
+        object-fit: contain;
+    }
+
+    .slider {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .modal-content-wrapper {
+        top: 2%;
+        height: auto;
+        padding: 0 10px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .slides img {
+        max-height: 60vh;
+    }
+
+    .slider {
+        border-radius: 8px;
+    }
+
+    .modal-content-wrapper {
+        top: 35%;
+        height: auto;
+    }
+}
